@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout code from git'){
                     steps{
-                        git 'https://github.com/ShubhamDiwan/New_Docker_Project.git'
+                        git 'https://github.com/ShubhamDiwan/Springboot.git'
                     }
                 }
       stage('Build Application'){
