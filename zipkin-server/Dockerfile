@@ -1,5 +1,5 @@
 FROM fabric8/java-alpine-openjdk8-jre
-ADD ["target/zipkin-server-0.0.1-SNAPSHOT-exec.jar", "app.jar"]
+ADD ["target/zipkin-server-0.0.1-SNAPSHOT.jar", "app.jar"]
 EXPOSE 8099 8787
 ENV JAVA_OPTS="-Xdebug -Xrunjdwp:server=y,transport=dt_socket,address=8787,suspend=n"
 RUN sh -c 'touch /app.jar'
